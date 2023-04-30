@@ -7,6 +7,7 @@ module.exports = {
         themeBlue: "#3498DB",
         themeRed: "#E74C3C",
         themeGreen: "#2ECC71",
+        themeGreenDark: "#27AE60",
         themeYellow: "#F1C40F",
 
         themeDark: "#2C3E50",
@@ -16,6 +17,9 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+      },
+      fontSize: {
+        "2xs": "0.5rem",
       },
     },
   },

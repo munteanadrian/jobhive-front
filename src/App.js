@@ -1,11 +1,13 @@
-import Nav from "./components/Nav";
+import { useSelector } from "react-redux";
+import RouteConfig from "./Config/RouteConfig";
+import { selectUser } from "./features/userSlice";
 
-function App() {
+export default function App() {
+  const user = useSelector(selectUser);
+
   return (
-    <div className="w-screen h-screen bg-themeBackground font-inter">
-      <Nav />
-    </div>
+    <>
+      <RouteConfig />;{user ? <div>Logged in</div> : <div>Not logged in</div>}
+    </>
   );
 }
-
-export default App;
